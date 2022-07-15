@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Make the variables for the colors to be used in the page */
+:root {
+--main: rgb(107, 50, 15);
+--second: rgba(10,5,200,1);
+--third: rgb(98, 101, 106);
+--dark: rgba(25,25,25, 1);
+--light: rgba(230,230,230, 1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--main);
+    background-color: var(--light);
+    line-height: 2.0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--third);
+    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+}
+
+header h1 {
+    color: var(--third);
+    background-color: var(--second);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 5vw;
+    line-height: 1;
+  }
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--second);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--second) 0%, var(--second) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.headshot-sec {
+    background: rgb(234, 235, 237);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--dark);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+
+
