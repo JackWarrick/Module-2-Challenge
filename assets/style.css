@@ -83,8 +83,107 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    text-align: right;
+    text-align: center;
+    flex-wrap: wrap;
 }
+
+.headshot-sec article h2 {
+    flex: 0 0 90%;
+    background-color: var(--second);
+    color: var(--third);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.0rem;
+    line-height: 1.2;
+    display: inline;
+}
+
+.headshot img {
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    min-width: 200px;
+    max-width: 250px;
+    height: auto;
+
+}
+
+.all-wrap {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.portfolio-section h3{
+    flex: 0 0 25%;
+    text-align: center;
+    padding-right: 15px;
+    border-right: 4px solid var(--dark);
+    font-size: 4vw;
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+.portfolio-section article{
+    flex: 0 0 80%;
+    margin-bottom: 10px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid var(--second);
+    background-color: var(--main);
+    color: var(--third);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
+
+.boxes:first-child{
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.boxes h4 {
+    font-size: larger;
+}
+.boxes span {
+    font-size: medium;
+}
+
+.main-box{
+background-image: url("");
+}
+
+
+
+
+
+
+
+
+
 
 
 
