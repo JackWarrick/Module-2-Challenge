@@ -70,7 +70,7 @@ section a {
     background-image: linear-gradient(270deg, var(--second) 0%, var(--second) 100%);
     background-size: 100% 0.2em;
     background-position: bottom;
-    transition: all 0.25s ease-in;
+    transition: all 1.0s ease-in;
     font-size: 1.4rem;
 }
 
