@@ -4,7 +4,7 @@
 
 /* Make the variables for the colors to be used in the page */
 :root {
---main: rgb(107, 50, 15);
+--main: rgb(11, 11, 11);
 --second: rgba(10,5,200,1);
 --third: rgb(98, 101, 106);
 --dark: rgba(25,25,25, 1);
@@ -73,7 +73,7 @@ main {
 }
 
 .headshot-sec {
-    background: rgb(234, 235, 237);
+    background-color: var(--light);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -99,12 +99,13 @@ main {
 }
 
 .headshot img {
-    padding-top: 20px;
-    padding-left: 20px;
     display: flex;
     min-width: 200px;
     max-width: 250px;
     height: auto;
+    border: 5px solid var(--third);
+    margin-left: 5px;
+
 
 }
 
@@ -143,9 +144,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.work-box {
     border: 5px solid var(--second);
-    background-color: var(--main);
-    color: var(--third);
+    background-color: rgb(11, 11, 11, .2);
+    color: black;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -158,9 +163,10 @@ main {
     background-size: 150%;
     transition: all 0.5s;
     font-size: 0.9rem;
+    flex: auto;
 }
 
-.boxes:first-child{
+.work-box:first-child{
     min-height: 400px;
     flex-basis: 100%;
 }
@@ -173,10 +179,74 @@ main {
 }
 
 .main-box{
-background-image: url("");
+    background-image: url("../assets/images/Horiseon-image.jpeg");
+}
+
+.second-box{
+    background-image: url("../assets/images/notification-image.jpg");
+}
+
+.third-box{
+    background-image: url("../assets/images/random-site.jpeg")
+}
+
+footer address{
+align-items: flex-start;
+text-align: center;
+padding: 10px;
+flex-wrap: wrap;
+border: 20px;
+border-color: black;
+}
+footer address a {
+    color: var(--third);
+    background-color: var(--second);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 2vw;
+    line-height: 1;
+    flex-wrap: wrap;
+    align-items: middle;
+    justify-content: center;
+    display: inline-block;
+    border: 5px solid var(--third);
 }
 
 
+
+@media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header section {
+      justify-content: center;
+    }
+  
+    .portfolio-section h3,
+    .portfolio-section article {
+      flex: 0 0 100%;
+    }
+  
+    .portfolio-section h3 {
+      border-right: none;
+      border-bottom: 4px solid var(--main);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }
+  
 
 
 
