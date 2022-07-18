@@ -13,9 +13,11 @@ When the viewer clicks on the application pictures, they are taken to the deploy
 
 # Application Materials
 
-![Screenshot of webpage](  )
+Screenshot of what the finished application should look like:
 
-[Link to deployed application](  )
+![Screenshot of webpage](assets/images/Module-2-Challenge-Screenshot.jpeg)
+
+[Link to deployed application](https://jackwarrick.github.io/Module-2-Challenge/)
 
 # Authors
 Jack Warrick
