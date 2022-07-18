@@ -65,7 +65,7 @@ section {
 section a {
     text-decoration: none;
     padding: 5px 10px;
-    color: var(--second);
+    color: var(--third);
     margin-right: 10px;
     background-image: linear-gradient(270deg, var(--second) 0%, var(--second) 100%);
     background-size: 100% 0.2em;
@@ -232,7 +232,7 @@ footer address a {
     border: 5px solid var(--third);
 }
 
- /* changing the sections for when the screen gets smaller */
+ /* changing the sections for when the screen gets bigger */
 
 @media screen and (max-width: 980px) {
     header {
@@ -264,15 +264,6 @@ footer address a {
       padding-bottom: 10px;
       text-align: left;
       font-size: 7vw;
-    }
-
-    footer {
-        border-right: none;
-        border-bottom: 4px solid var(--main);
-        margin-bottom: 20px;
-        padding-bottom: 10px;
-        text-align: left;
-        font-size: 7vw;
     }
   }
   
