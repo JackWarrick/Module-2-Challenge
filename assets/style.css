@@ -11,6 +11,7 @@
 --light: rgba(230,230,230, 1);
 }
 
+/* Format the text of the body section */
 body {
     margin: 0;
     padding: 0;
@@ -28,6 +29,8 @@ p {
     margin: 0;
 }
 
+/* Style of the top header section with four different headers associated */
+
 header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -39,6 +42,8 @@ header {
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
+/* Style of main head */
+
 header h1 {
     color: var(--third);
     background-color: var(--second);
@@ -48,11 +53,14 @@ header h1 {
     line-height: 1;
   }
 
+  /* Style of the section containing the three lesser headlines up top */
+
 section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+ /* Style of the text in the lesser heads */
 
 section a {
     text-decoration: none;
@@ -60,17 +68,20 @@ section a {
     color: var(--second);
     margin-right: 10px;
     background-image: linear-gradient(270deg, var(--second) 0%, var(--second) 100%);
-    background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: bottom;
     transition: all 0.25s ease-in;
     font-size: 1.4rem;
 }
 
+ /* Space out the main section from the rest */
+
 main {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+ /* Style of the section under the main heads up top with headshot and subtitle */
 
 .headshot-sec {
     background-color: var(--light);
@@ -109,11 +120,15 @@ main {
 
 }
 
+ /* style the .all-wrap section in main */
+
 .all-wrap {
     max-width: 88%;
     margin-left: auto;
     margin-right: auto;
 }
+
+ /* Style of the section with headline work */
 
 .portfolio-section {
     margin: 25px 0;
@@ -167,7 +182,7 @@ main {
 }
 
 .work-box:first-child{
-    min-height: 400px;
+    min-height: 300px;
     flex-basis: 100%;
 }
 
@@ -177,6 +192,8 @@ main {
 .boxes span {
     font-size: medium;
 }
+
+ /* Add background images to each work box */
 
 .main-box{
     background-image: url("../assets/images/Horiseon-image.jpeg");
@@ -190,6 +207,8 @@ main {
     background-image: url("../assets/images/random-site.jpeg")
 }
 
+ /* Style of the bottom footer section with contact info*/
+
 footer address{
 align-items: flex-start;
 text-align: center;
@@ -198,6 +217,7 @@ flex-wrap: wrap;
 border: 20px;
 border-color: black;
 }
+
 footer address a {
     color: var(--third);
     background-color: var(--second);
@@ -212,7 +232,7 @@ footer address a {
     border: 5px solid var(--third);
 }
 
-
+ /* changing the sections for when the screen gets smaller */
 
 @media screen and (max-width: 980px) {
     header {
@@ -244,6 +264,15 @@ footer address a {
       padding-bottom: 10px;
       text-align: left;
       font-size: 7vw;
+    }
+
+    footer {
+        border-right: none;
+        border-bottom: 4px solid var(--main);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
     }
   }
   
